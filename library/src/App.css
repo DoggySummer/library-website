@@ -1,38 +1,50 @@
-.App {
-  text-align: center;
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* 헤더 */
+.header{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  margin: 0 auto;
+}
+.logo{
+  background-color: blueviolet;
+  opacity: 0.5;
+  width: 260px;
+  height: 60px;
+}
+.headline_list{
+  display: flex;
+}
+/* 가장 위쪽의 이미지 */
+.top_background{
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.background_img{
+  width: 100%;
+}
+.dark_side{
+  background-color: black;
+  z-index: 10;
+  position: absolute;
+  width: 100%;
+  height: 700px;
+  opacity: 0.4;
+}
+.background_title{
   color: white;
+  position: absolute;
+  top: 0;
+  margin: 0 auto;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.background_title h1{
+  font-size: 100px;
 }
