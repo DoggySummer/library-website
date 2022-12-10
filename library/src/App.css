@@ -2,6 +2,7 @@ body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  height: 1000px;
 }
 /* 헤더 */
 .header{
@@ -12,13 +13,12 @@ body{
   margin: 0 auto;
 }
 .logo{
-  background-color: blueviolet;
-  opacity: 0.5;
   width: 260px;
   height: 60px;
 }
 .headline_list{
   display: flex;
+  list-style: none;
 }
 /* 가장 위쪽의 이미지 */
 .top_background{
@@ -37,14 +37,23 @@ body{
   position: absolute;
   width: 100%;
   height: 700px;
-  opacity: 0.4;
+  opacity: 0.5;
 }
 .background_title{
   color: white;
   position: absolute;
-  top: 0;
+  top: 80%;
+  left : 50%;
   margin: 0 auto;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+  width: 60%;
 }
 .background_title h1{
   font-size: 100px;
+  line-height: 20%;
+}
+.background_title h3{
+  font-size: 30px;
+  margin: 0 auto;
 }
