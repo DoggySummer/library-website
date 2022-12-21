@@ -1,10 +1,10 @@
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import {Button, Navbar, Container, Nav} from 'react-bootstrap'
-import bg from './bg.png'
-import { useState } from 'react';
-import shoesData from './data';
-import { Routes, Route, Link, useNavigate, Outlet } from 'react-router-dom'
+// import './App.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import {Button, Navbar, Container, Nav} from 'react-bootstrap'
+// import bg from './bg.png'
+// import { useState } from 'react';
+// import shoesData from './data';
+// import { Routes, Route, Link, useNavigate, Outlet } from 'react-router-dom'
 
 function App() {
   let [shoes] = useState(shoesData);
